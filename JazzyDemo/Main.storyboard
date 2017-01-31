@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8hV-ka-Vcn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="GYm-Cs-Md1">
+            <objects>
+                <viewController id="8hV-ka-Vcn" customClass="ViewController" customModule="JazzyDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ltx-u7-4oe"/>
+                        <viewControllerLayoutGuide type="bottom" id="wgO-Lg-66h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vvP-hG-kMZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7P4-Ho-qlV">
+                                <rect key="frame" x="187" y="319.5" width="133" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="AlertWithTextField"/>
+                                <connections>
+                                    <action selector="onAlertWithTextFieldTap:" destination="8hV-ka-Vcn" eventType="touchUpInside" id="LZL-2h-Fg3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ns-bb-ySe">
+                                <rect key="frame" x="55" y="319.5" width="132" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="SimpleAlert"/>
+                                <connections>
+                                    <action selector="onSimpleAlertTap:" destination="8hV-ka-Vcn" eventType="touchUpInside" id="ifn-fo-ZH8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4ns-bb-ySe" firstAttribute="leading" secondItem="vvP-hG-kMZ" secondAttribute="leading" constant="55" id="1kT-6R-5Id"/>
+                            <constraint firstItem="7P4-Ho-qlV" firstAttribute="leading" secondItem="4ns-bb-ySe" secondAttribute="trailing" id="JxW-Iu-nnS"/>
+                            <constraint firstAttribute="trailing" secondItem="7P4-Ho-qlV" secondAttribute="trailing" constant="55" id="a3L-xQ-vHc"/>
+                            <constraint firstItem="7P4-Ho-qlV" firstAttribute="centerY" secondItem="4ns-bb-ySe" secondAttribute="centerY" id="aIL-N4-kJE"/>
+                            <constraint firstItem="4ns-bb-ySe" firstAttribute="centerY" secondItem="vvP-hG-kMZ" secondAttribute="centerY" id="gVD-9H-JtZ"/>
+                            <constraint firstItem="7P4-Ho-qlV" firstAttribute="width" secondItem="4ns-bb-ySe" secondAttribute="width" constant="1" id="oMA-6f-xig"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3FS-iw-kk5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79" y="-19"/>
+        </scene>
+    </scenes>
+</document>

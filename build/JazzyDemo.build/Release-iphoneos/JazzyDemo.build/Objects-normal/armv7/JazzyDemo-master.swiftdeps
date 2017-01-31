@@ -1,0 +1,7 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "b1e9615a45e73f0b8cb82f07e2e7b23c"
+build_time: [539176749, 444042000]
+inputs:
+  "/Yudiz_Vipul/DemoProject/JazzyDemo/JazzyDemo/ViewController.swift": [9223372036854775807, 0]
+  "/Yudiz_Vipul/DemoProject/JazzyDemo/JazzyDemo/AppDelegate.swift": [9223372036854775807, 0]
+  "/Yudiz_Vipul/DemoProject/JazzyDemo/JazzyDemo/Alert.swift": [9223372036854775807, 0]

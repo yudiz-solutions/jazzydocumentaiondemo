@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Alert Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Alert" class="dashAnchor"></a>
+    <a title="Alert Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Alert Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Alert.html">Alert</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ViewController.html">ViewController</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Alert</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">class</span> <span class="kt">Alert</span><span class="p">:</span> <span class="kt">UIAlertController</span></code></pre>
+
+                </div>
+              </div>
+            <p>Generates user event driven alerts.
+It used to displays an alert message to the user. It is extended from <code>UIAlertController</code>. This class replace the <code>UIAlertView</code> class for displaying alerts.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Variables"></a>
+                <a name="//apple_ref/swift/Section/Variables" class="dashAnchor"></a>
+                <a href="#/Variables">
+                  <h3 class="section-name">Variables</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC9JazzyDemo5Alert10userActionGSqFSST__"></a>
+                    <a name="//apple_ref/swift/Property/userAction" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC9JazzyDemo5Alert10userActionGSqFSST__">userAction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>It will use to handle user tapping action. It will invoke when user tap on alert button.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">var</span> <span class="nv">userAction</span><span class="p">:</span> <span class="p">((</span><span class="n">_</span> <span class="nv">action</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())?</span> <span class="o">=</span> <span class="kc">nil</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Methods"></a>
+                <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
+                <a href="#/Methods">
+                  <h3 class="section-name">Methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC9JazzyDemo5Alert13showAlertViewFT12inControllerCSo16UIViewController5titleSS7messageSS10userActionGSqFSST___T_"></a>
+                    <a name="//apple_ref/swift/Method/showAlertView(inController:title:message:userAction:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC9JazzyDemo5Alert13showAlertViewFT12inControllerCSo16UIViewController5titleSS7messageSS10userActionGSqFSST___T_">showAlertView(inController:title:message:userAction:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Displays alert over passed view controller with title, message and buttons.</p>
+
+<ul>
+<li>Parameters:
+
+<ul>
+<li>inController: InController over which the alert is presented. Should use self, or provide view controller name.</li>
+<li>title: Title of the alert</li>
+<li>message: Main message presented in the alert</li>
+<li>userAction: UserAction optional parameter, it invoked when user tap on particular button in alert.</li>
+</ul></li>
+</ul>
+
+<p><a href='#usage-example' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='usage-example'>Usage Example:</h2>
+<pre class="highlight plaintext"><code>Alert.showAlertView(inController: presentingViewController, title: <q>Title of the Alert</q>, message: <q>Main message presented in the alert</q>)</p>
+
+<p></code></pre></p>
+
+<p><strong>Note :</strong> If you wants to handle user tap action then you must be use userAction parameter</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">showAlertView</span><span class="p">(</span><span class="nv">inController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">userAction</span><span class="p">:</span> <span class="p">((</span><span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">())?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>InController over which the alert is presented. Should use self, or provide view controller name.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>title</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Title of the alert</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>message</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Main message presented in the alert</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userAction</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>UserAction optional parameter, it invoked when user tap on particular button in alert.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC9JazzyDemo5Alert23showInputFieldAlertViewFT12inControllerCSo16UIViewController5titleSS7messageSS11placeHolderSS14inputtedStringFGSqSS_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/showInputFieldAlertView(inController:title:message:placeHolder:inputtedString:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC9JazzyDemo5Alert23showInputFieldAlertViewFT12inControllerCSo16UIViewController5titleSS7messageSS11placeHolderSS14inputtedStringFGSqSS_T__T_">showInputFieldAlertView(inController:title:message:placeHolder:inputtedString:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Displays alert over passed view controller with input textField, title, message and buttons.</p>
+
+<ul>
+<li>Parameters:
+
+<ul>
+<li>inController: InController over which the alert is presented. Should use self, or provide view controller name.</li>
+<li>title: Title of the alert</li>
+<li>message: Main message presented in the alert</li>
+<li>placeHolder: Textfield placeholder texts</li>
+<li>inputtedString: InputtedString is block parameter, it invoked when user tap on button in alert and it returns user inputted string.</li>
+</ul></li>
+</ul>
+
+<p><a href='#usage-example' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='usage-example'>Usage Example:</h2>
+<pre class="highlight plaintext"><code>Alert.showInputFieldAlertView(inController: presentingViewController, title: <q>Title of the Alert</q>, message: <q>Main message presented in the alert</q>, placeHolder: <q>Textfield placeholder texts</q>) { (inputtedString) in
+    print(<q>User inputted texts : \(inputtedString)</q>)
+}
+</code></pre></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">showInputFieldAlertView</span><span class="p">(</span><span class="nv">inController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">placeHolder</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">inputtedString</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">()))</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inController</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>InController over which the alert is presented. Should use self, or provide view controller name.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>title</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Title of the alert</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>message</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Main message presented in the alert</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>placeHolder</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Textfield placeholder texts</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inputtedString</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>InputtedString is block parameter, it invoked when user tap on button in alert and it returns user inputted string.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-01-31)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
